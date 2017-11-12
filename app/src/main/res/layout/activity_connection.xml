@@ -18,8 +18,10 @@
             android:animateLayoutChanges="true"
             android:background="@color/whiteBackground"
             android:clipToPadding="false"
+            android:elevation="@dimen/show_element_elevation"
             android:orientation="vertical"
-            android:scrollbars="vertical">
+            android:scrollbars="vertical"
+            tools:targetApi="lollipop">
 
             <ImageView
                 android:id="@+id/header_cover_image"
@@ -55,7 +57,6 @@
                 android:layout_below="@+id/header_cover_image"
                 android:background="@color/colorSecondary"
                 android:clipToPadding="false"
-                android:elevation="@dimen/show_element_elevation"
                 android:paddingBottom="24dp"
                 tools:targetApi="lollipop">
 
@@ -243,11 +244,11 @@
                     <android.support.v7.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="@dimen/show_menu_margin"
-                        android:paddingTop="@dimen/show_padding"
                         android:layout_toEndOf="@id/show_phoneNumber_icon"
                         android:layout_toRightOf="@id/show_phoneNumber_icon"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/show_menu_margin"
+                        android:paddingTop="@dimen/show_padding">
 
                         <android.support.v7.widget.AppCompatTextView
                             android:id="@+id/connection_phoneNumber"
@@ -270,9 +271,9 @@
                         android:layout_width="@dimen/show_icon_size"
                         android:layout_height="@dimen/show_icon_size"
                         android:layout_alignParentEnd="true"
-                        android:layout_margin="@dimen/show_padding"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/show_padding"
                         android:background="@drawable/ic_message_black_24dp" />
                 </RelativeLayout>
             </android.support.v7.widget.LinearLayoutCompat>
